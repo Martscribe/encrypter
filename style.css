@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('Resources/font/Dosis-Regular.woff2') 
+    format("woff2");
+}
+@font-face{
+    font-family: 'Code';
+    src: url('Resources/font/SourceCodeVariable-Roman.otf.woff2')
+    format("woff2");
+}
