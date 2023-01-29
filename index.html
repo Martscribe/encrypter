@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1>Encrypter Alura</h1>
+        <script src="encripter.js"></script>
     </header>
     <main>
         <div class="Encription-box">
@@ -19,14 +20,13 @@
             <button id="decryptBtn" onclick="decrypt()">Decrypt</button>
         </div>
         <div class="Result-box">
-            <textarea id="output" placeholder="result"></textarea>
+            <textarea id="output" placeholder="result" disabled></textarea>
             <br><br>
-            <button id="copiarBtn" onclick="copiar()">Copy</button>
+            <button id="copyBtn" onclick="copy()">Copy</button>
         </div>
     </main>
     <footer>
         <p>Created by Martscribe</p>
-        <script src="encripter.js"></script>
     </footer>
     </body>
 </html>

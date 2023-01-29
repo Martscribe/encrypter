@@ -8,7 +8,7 @@ const encrypt = () => {
     document.getElementById("output").value = input;
     }
 
-    const decrypt = () => {
+const decrypt = () => {
     let input = document.getElementById("input").value;
     input = input.replace(/enter/g, "e");
     input = input.replace(/imes/g, "i");
@@ -18,8 +18,13 @@ const encrypt = () => {
     document.getElementById("output").value = input;
     }
 
-    const copiar = () => {
-    let output = document.getElementById("output");
-    output.select();
-    document.execCommand("copy");
-    }
+const copy = async () => {
+    let output = document.getElementById("output").value;
+    try {
+        await navigator.clipboard.writeText(output);
+        console.log("Copied text: ", output);
+        } catch (err) {
+        console.error("Failed to copy text: ", err);
+        }
+}
+      
