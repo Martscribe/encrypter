@@ -8,3 +8,95 @@
     src: url('Resources/font/SourceCodeVariable-Roman.otf.woff2')
     format("woff2");
 }
+body{
+    font-family: 'Code';
+    background-color: #111111;
+    width: 100vw;
+    font-size: 30px;
+}
+h1{
+    font-family: 'Dosis';
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+main{
+    display: flex;
+    width: 100vw;
+    padding: 1%;
+}
+
+textarea{
+    font-family: 'Code';
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    width: 90%;
+}
+.Encription-box{
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 1% 0 1% 2.5%;
+    width: 70%;
+    padding: .5em 0 .5em 0;
+}
+.Result-box{
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 1% 0 1% 0;
+    width: 25%;
+    padding: .5em 0 .5em 0;
+}
+
+button{
+    font-family: 'Code';
+    font-size: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 44.5%;
+    padding: 1em 0 1em 0;
+}
+button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.Result-box button{
+    width: 91%;
+}
+footer{
+    font-family: 'dosis';
+    font-size: .5em;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+}
+@media screen and (max-width: 480px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body{
+        width: 100vw;
+        overflow: scroll;
+        }
+    .Encription-box{
+        width: 90%;
+    }
+    .Result-box{
+        width: 90%;
+    }
+    .Encription-box textarea{
+        width: 90%;
+    }
+    .Result-box textarea{
+        width: 90%;
+    }
+} 
