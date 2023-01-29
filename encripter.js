@@ -27,4 +27,3 @@ const copy = async () => {
         console.error("Failed to copy text: ", err);
         }
 }
-      
