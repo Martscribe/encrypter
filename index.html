@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Encripter</title>
+    <title>Encripter Alura</title>
 </head>
 <body>
+    <header>
+        <h1>Encrypter Alura</h1>
+    </header>
     <main>
-        <form>
-            <textarea id="input"></textarea>
-            <button type="button" id="encrypt-btn">Encriptar</button>
-            <button type="button" id="decrypt-btn">Desencriptar</button>
-        </form>
-        <div id="output"></div>
-        <button type="button" id="clipboard">Copy</button>          
+        <div class="Encription-box">
+            <textarea id="input" placeholder="Put yout text here"></textarea>
+            <br><br>
+            <button id="encryptBtn" onclick="encrypt()">Encrypt</button>
+            <button id="decryptBtn" onclick="decrypt()">Decrypt</button>
+        </div>
+        <div class="Result-box">
+            <textarea id="output" placeholder="result"></textarea>
+            <br><br>
+            <button id="copiarBtn" onclick="copiar()">Copy</button>
+        </div>
     </main>
-</body>
-<footer>
-    <script src="encripter.js"></script>
-</footer>
-
+    <footer>
+        <p>Created by Martscribe</p>
+        <script src="encripter.js"></script>
+    </footer>
+    </body>
 </html>
