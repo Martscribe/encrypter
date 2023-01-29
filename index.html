@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="encripter.js">
-    <title>Document</title>
+    <title>Encripter</title>
 </head>
 <body>
-    
+    <main>
+        <form>
+            <textarea id="input"></textarea>
+            <button type="button" id="encrypt-btn">Encriptar</button>
+            <button type="button" id="decrypt-btn">Desencriptar</button>
+        </form>
+        <div id="output"></div>
+        <button type="button" id="clipboard">Copy</button>          
+    </main>
 </body>
+<footer>
+    <script src="encripter.js"></script>
+</footer>
+
 </html>
